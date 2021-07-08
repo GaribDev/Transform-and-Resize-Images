@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Rubik:wght@400;500&display=swap');
+        body {
+            margin: 0px;
+            background-color: #0f1923;
+        }
+        .container {
+            margin-top: 100px;
+            display: block;
+            text-align: center;
+            align-items: center;
+        }
+        h1 {
+            color: #ff4654;
+            margin: 0;
+            font-size: 100px;
+            font-family: Antonio;
+            font-weight: 700;
+        }
+        h2{
+            color: #dbd7ce;
+            font-size: 40px;
+            font-family: Rubik;
+            font-weight: 500;
+        }
+        button{
+            background-color: #dbd7ce;
+            color: #ff4654;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 40px;
+            padding: 10px; margin: 20px;
+            width: 400px; height: 150px;
+        }
+        button:hover{
+            background-color: #ff4654;
+            color: #dbd7ce;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Wemcome to <br/>Image Editor Portal</h1>
+        <h2> What would you like to do today?</h2>
+        <button onclick="window.location.href='resize.html'">Resize Image</button>
+        <button onclick="window.location.href='transform.html'">Transfrom Image</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Rubik:wght@400;500&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    background-color: #0f1923;
+}
+.container{
+  top: 0;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.heading{
+  margin: 0;
+}
+.heading h1{
+  color: #ff4654;
+  margin: 0;
+  font-size: 40px;
+  font-family: Antonio;
+  font-weight: 700;
+}
+.heading h3{
+    color: #dbd7ce;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Rubik;
+    font-weight: 500;
+}
+#home_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0f1923;
+  color: #ff4654;
+  border: none;
+  text-align: left;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px;
+}
+.steps {
+  font-family: Antonio;
+  font-weight: 700  ;
+  font-size: 18px;
+  color: #ff4654;
+  display: flex;
+  justify-content: center;
+}
+.steps h2 {
+  width: 80%;
+  text-align: center;
+  border-bottom: 3px solid #dbd7ce;
+  line-height: 0.1em;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.steps h2 span {
+  background: #0f1923;
+  padding: 0 10px;
+}
+
+#upload{
+    display: flex;
+    justify-content: center;
+}
+#upload_btn {
+    border-radius: 4px;
+    background-color: #ff4654;
+    border: none;
+    color: #dbd7ce;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  #upload_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  #upload_btn span:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f35b";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #upload_btn:hover span {
+    padding-right: 25px;
+  }
+  #upload_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  #imageOriginal {
+    display: none;
+  }
+#view{
+  width: 800px;
+  height: 500px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 5px #ff4654;
+  background-color: #dbd7ce;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: Rubik;
+}
+#view i{
+  padding-top: 200px;
+  font-size: 60px;
+}
+#view canvas{
+top: 0;
+left: 0;
+    position: absolute;
+}
+
+#dimensions {
+  text-align: center;
+  margin: 30px;
+  color: #dbd7ce;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 20px;
+}
+#dimensions input[type="number"] {
+  border: 2px solid #ff4654;
+  border-radius: 5px;
+  height: 20px;
+  background-color: #dbd7ce;
+}
+#submit_btn {
+  border-radius: 4px;
+  background-color: #ff4654;
+  border: none;
+  color: #dbd7ce;
+  text-align: center;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#submit_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#submit_btn span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#submit_btn:hover span {
+  padding-right: 25px;
+}
+#submit_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#output_div{
+  display: block;
+  justify-content: center;
+}
+#output_div canvas{
+box-shadow: 0 0 0 5px #ff4654;
+  border-radius: 20px;
+  background-color: #dbd7ce;
+}
+#download{
+  margin: 20px;
+}
+#download button {
+  border-radius: 4px;
+  background-color: #ff4654;
+  border: none;
+  color: #dbd7ce;
+  text-align: center;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#download button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#download button span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f358";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#download button:hover span {
+  padding-right: 25px;
+}
+#download button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
