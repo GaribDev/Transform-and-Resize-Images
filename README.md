@@ -5,6 +5,7 @@ Webpage for transforming and resizing locally stored images.
  - HTML
  - CSS
  - Javascript
+ - OpenCV.js
 
 ## How to run
  Just open the homepage.html in your favorite browser.
